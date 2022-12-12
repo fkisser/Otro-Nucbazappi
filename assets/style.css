@@ -1,0 +1,193 @@
+:root{
+    --background: #131415;
+    --cards: #252525;
+    --principal: #ffa400;
+    --secondary: #fc2933;
+    --white: #fff;
+    --gradient: linear-gradient(to right, #ffa100, #fb103d);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    width: 100%;
+}
+section{
+    margin: 25px 0;
+    padding: 0 25px;
+}
+section:first-child{
+    margin-top: 50px;
+}
+section:last-child{
+    margin-bottom: 50px;
+}
+
+/************HEADER**************/
+
+
+
+
+/************HERO**************/
+
+#hero {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-info h1 { 
+    font-weight: 700px;
+    font-size: 66px;
+}
+
+.hero-info h2 {
+    font-size: 51px;
+    font-weight: 700px;
+}
+
+.hero-info p {
+    font-size: 21px;
+    font-weight: 400px;
+}
+
+.hero-info a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 40px;
+    background: var(--gradient);
+    border-radius: 15px;
+    width: 165px;
+}
+
+#hero img {
+    max-width: 415px;
+}
+
+
+
+/************RECOMENDADOS**************/
+
+
+
+
+/************CATEGORÍAS**************/
+
+
+
+
+/************POPULARES**************/
+#populares{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+#populares h2{
+    font-weight: 500;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    max-width: 250px;
+    background: var(--cards);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card img{
+    max-width: 100%;
+}
+.card h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card > p{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.3;
+}
+.card div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio{
+    color: transparent;
+    font-size: 19px;
+    font-weight: 800;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.boton{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--gradient);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+/************FOOTER**************/
+
+footer {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+footer a,
+footer p {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer span {
+    font-weight: 800;
+}
+
+.footer-part {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
