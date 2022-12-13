@@ -28,12 +28,60 @@ main {
 section{
     margin: 25px 0;
     padding: 0 25px;
+    
+    display: flex;
+
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    
 }
 section:first-child{
     margin-top: 50px;
 }
 section:last-child{
     margin-bottom: 50px;
+}
+
+/************cards**************/
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    background: var(--cards);
+    border-radius: 15px;
+    display: flex;
+}
+.card__titulo{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card__descripcion{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.3;
+}
+.card__precio{
+    color: transparent;
+    font-size: 19px;
+    font-weight: 800;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--gradient);
+    padding: 5px 10px;
+    border-radius: 20px;
+    max-height: 30px;
 }
 
 /************HEADER**************/
@@ -44,10 +92,6 @@ section:last-child{
 /************HERO**************/
 
 #hero {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
     justify-content: space-between;
     align-items: center;
     line-height: 1;
@@ -92,7 +136,28 @@ section:last-child{
 
 
 /************RECOMENDADOS**************/
-
+#recomendados{
+    flex-direction: column;
+}
+#recomendados h2{
+    font-weight: 500;
+}
+.card--recomendados{
+    max-width: 350px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card--recomendados img{
+    scale: 50%;
+}
+.card--recomendados div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 
@@ -103,62 +168,24 @@ section:last-child{
 
 /************POPULARES**************/
 #populares{
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
 }
 #populares h2{
     font-weight: 500;
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.card{
+.card--populares{
     max-width: 250px;
-    background: var(--cards);
     padding: 20px;
-    border-radius: 15px;
-    display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.card img{
+.card--populares img{
     max-width: 100%;
 }
-.card h4{
-    font-size: 15px;
-    font-weight: 500;
-}
-.card > p{
-    font-size: 14px;
-    font-weight: 400;
-    opacity: 0.3;
-}
-.card div{
+.card--populares div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.precio{
-    color: transparent;
-    font-size: 19px;
-    font-weight: 800;
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-.boton{
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-    background: var(--gradient);
-    padding: 5px 10px;
-    border-radius: 20px;
 }
 /************FOOTER**************/
 

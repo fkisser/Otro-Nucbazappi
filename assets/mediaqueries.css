@@ -68,11 +68,11 @@
     .cards{
         gap: 30px;
     }
-    .card{
+    .card--populares{
         width: 200px;
         align-items: center;
     }
-    .card div{
+    .card--populares div{
         flex-direction: column;
         align-items: center;
         gap: 10px;
