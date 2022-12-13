@@ -127,6 +127,7 @@ section:last-child{
     background: var(--gradient);
     border-radius: 15px;
     width: 165px;
+    text-transform: uppercase;
 }
 
 #hero img {
@@ -140,37 +141,69 @@ section:last-child{
     flex-direction: column;
 }
 #recomendados h2{
+    font-size: 22px;
     font-weight: 500;
 }
 .card--recomendados{
+    padding: 15px;
+    gap: 10px;
     max-width: 350px;
-    padding: 5px;
+    max-height: 100px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .card--recomendados img{
-    scale: 50%;
+    max-width: 62px;
 }
 .card--recomendados div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 
 
 /************CATEGORÍAS**************/
-
-
+#categorias{
+    flex-direction: column;
+}
+#categorias h2{
+    font-size: 15px;
+    font-weight: 800;
+}
+.card--categorias{
+    width: 100%;
+    max-width: 135px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card--categorias img{
+    max-width: 100%;
+}
+.card--categorias p{
+    font-size: 15px;
+    text-align: center;
+}
+.card--categorias span{
+    width: 30%;
+    height: 5px;
+    background: var(--gradient);
+    border-radius: 15px;
+}
 
 
 /************POPULARES**************/
 #populares{
     flex-direction: column;
+    width: 100%;
 }
 #populares h2{
+    font-size: 22px;
     font-weight: 500;
 }
 .card--populares{
