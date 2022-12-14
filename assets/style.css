@@ -16,21 +16,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
+html{
     background: var(--background);
+    color: var(--white);
+}
+main {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--white);
-    width: 100%;
 }
 section{
     margin: 25px 0;
     padding: 0 25px;
-    
     display: flex;
-
     width: 100%;
     max-width: 1200px;
     gap: 20px;
@@ -85,8 +85,43 @@ section:last-child{
 }
 
 /************HEADER**************/
+header{
+    z-index: 1;
+    background: var(--background);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 40px;
+}
 
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.link{
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--white);
+}
 
+.link--selected{
+    opacity: 100%;
+}
 
 
 /************HERO**************/
@@ -223,13 +258,12 @@ section:last-child{
 /************FOOTER**************/
 
 footer {
-    background: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 footer a,

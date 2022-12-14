@@ -3,17 +3,16 @@
     transition: all 0.3s ease;
 }
 .card:hover{
-    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 164, 0 , 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255, 164, 0 , 1);
+    box-shadow: 0px 0px 5px 0px rgba(255, 164, 0 , 1);
     transition: all 0.3s ease;
 }
 .boton{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.boton:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -44,6 +43,24 @@
     animation: fade 1s ease-in forwards,
     slide-up 1.1s ease-in-out;
 }
+.zoom{
+    transition: all 0.3s ease;
+}
+.zoom:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+/************HEADER**************/
+.link{
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+.link:hover{
+    opacity: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 /************HERO**************/
 
 .hero-info h2 {
@@ -61,7 +78,6 @@
 }
 
 .hero-info a:hover {
-    transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
@@ -82,12 +98,14 @@
 }
 /************CATEGORÍAS**************/
 #categorias{
-
     animation-delay: 0.7s;
     transition: transform 0.3s ease;
 }
 .card--categorias:hover{
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(252, 41, 51 , 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(252, 41, 51 , 1);
+    box-shadow: 0px 0px 5px 0px rgba(252, 41, 51 , 1);
 }
 .card--categorias > .barra{
     transition: all 0.3s ease-in;

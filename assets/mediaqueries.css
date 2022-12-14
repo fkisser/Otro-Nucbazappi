@@ -38,9 +38,23 @@
 @media (max-width: 576px) {
 
     .hero-info { 
+        text-align: center;
+        line-height: normal;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
         width: 100%;
+    }
+
+    .hero-info h1 { 
+        font-size: 50px;
+    }
+    
+    .hero-info h2 {
+        font-size: 40px;
+    }
+    
+    .hero-info p {
+        font-size: 16px;
     }
 
     .hero-info a {
@@ -50,12 +64,46 @@
 }
 
 /************RECOMENDADOS**************/
+@media (max-width: 768px) {
+    .card--recomendados{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
 
+    #recomendados .cards{
+        gap: 10px;
+    }
+    .card--recomendados .boton{
+        width: fit-content;
+    }
+    .card--recomendados .card__descripcion{
+        display: none;
+    }
 
-
+}
 
 /************CATEGORÍAS**************/
+@media (max-width: 768px) {
 
+    #categorias .cards{
+        gap: 15px;
+    }
+    .card--categorias img{
+        max-width: 50%;
+    }
+
+}
+@media (max-width: 576px) {
+
+    #categorias .cards{
+        gap: 10px;
+    }
+    .card--categorias img{
+        display: none;
+    }
+
+}
 
 
 
@@ -63,10 +111,15 @@
 @media (max-width: 992px) {
 
 }
+@media (max-width: 768px) {
 
+    #populares .cards{
+        gap: 15px;
+    }
+}
 @media (max-width: 576px) {
-    .cards{
-        gap: 30px;
+    #populares .cards{
+        gap: 10px;
     }
     .card--populares{
         width: 200px;
@@ -84,7 +137,8 @@
 }
 
 /************FOOTER**************/
-
-
-
-
+@media (max-width: 576px) {
+    footer a, footer p {
+        font-size: 12px;
+    }
+}
