@@ -34,7 +34,6 @@ section{
     width: 100%;
     max-width: 1200px;
     gap: 20px;
-    
 }
 section:first-child{
     margin-top: 50px;
@@ -86,7 +85,7 @@ section:last-child{
 
 /************HEADER**************/
 header{
-    z-index: 1;
+    z-index: 3;
     background: var(--background);
     height: 100px;
     width: 100%;
@@ -95,6 +94,7 @@ header{
     align-items: center;
     position: fixed;
     top: 0;
+    box-shadow: 0px 0px 5px 0px rgba(255, 164, 0 , .5);
 }
 .navbar{
     display: flex;
@@ -112,15 +112,16 @@ header{
     gap: 50px;
 }
 .link{
+    width: 100%;
+}
+
+.link--selected{
+    opacity: 100%;
     font-size: 12px;
     display: flex;
     gap: 15px;
     align-items: center;
     color: var(--white);
-}
-
-.link--selected{
-    opacity: 100%;
 }
 
 
@@ -235,7 +236,6 @@ header{
 /************POPULARES**************/
 #populares{
     flex-direction: column;
-    width: 100%;
 }
 #populares h2{
     font-size: 22px;
@@ -281,6 +281,123 @@ footer span {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+/************CARRITO**************/
+#cart-toggle {
+    display: none;
+}
+
+.cart {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 20px;
+    background: var(--cards);
+    border-left: 3px solid rgba(252, 41, 51, .3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc( 100vh - 100px );
+    overflow-y: auto;
+    /* display: none; */
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item1{
+    background: url(./img/recomendados/3.png);
+}
+.item2{
+    background: url(./img/populares/1.png);
+}
+.item3{
+    background: url(./img/populares/5.png);
+}
+
+.cart-item .img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 65px;
+    width: 65px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.item-handler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.item-quantity {
+    color: var(--white);
+}
+
+.up {
+    border: 1px solid var(--principal);
+}
+
+.down {
+    background-color: var(--secondary);
+}
+
+.divider {
+    border: 0.5px solid var(--principal);
+    margin-top: 20px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cart-total p {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.cart-total span {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
 }
 
 

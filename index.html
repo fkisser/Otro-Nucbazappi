@@ -19,9 +19,69 @@
             <img src="./assets/img/header/navbar/logo.png" alt="Logo NucbaZappi" class="logo">
             <nav>
                 <ul class="links">
-                    <li><a href="index.html" class="link link--selected"><img class="zoom" src="./assets/img/header/navbar/Home.png" alt="Home">Home</a></li>
-                    <li><a href="#" class="link"><img class="zoom" src="./assets/img/header/navbar/Icon-Cart.png" alt="Carrito"></a></li>
-                    <li><a href="#" class="link"><img class="zoom" src="./assets/img/header/navbar/Profile.png" alt="Perfil"></a></li>                    
+                    <li>
+                        <a href="index.html" class="link--selected"><img class="zoom link" src="./assets/img/header/navbar/Home.png" alt="Home">Home</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cart-toggle" />
+                        <label for="cart-toggle" class="cart-label">
+                            <img class="zoom link" src="./assets/img/header/navbar/Icon-Cart.png" alt="Carrito">
+                        </label>
+                        <!-------CARRITO EN EL MISMO NIVEL QUE EL CHECKBOX PARA QUE FUNCIONE------->
+                        <div class="cart">
+                            <h2>Lo que te querés llevar</h2>
+                            <div class="cart-item card">
+                                <div class="img item1"></div>
+                                <div class="item-info">
+                                    <h3 class="card__titulo">Papas | Provenzal</h3>
+                                    <span class="card__precio">$360</span>
+                                </div>
+                                <div class="item-handler">
+                                    <span class="quantity-handler down">-</span>
+                                    <span class="item-quantity">3</span>
+                                    <span class="quantity-handler up">+</span>
+                                </div>
+                            </div>
+                            <div class="cart-item card">
+                                <div class="img item2"></div>
+                                <div class="item-info">
+                                    <h3 class="card__titulo">La Mr. Pit</h3>
+                                    <span class="card__precio">$350</span>
+                                </div>
+                                <div class="item-handler">
+                                    <span class="quantity-handler down">-</span>
+                                    <span class="item-quantity">2</span>
+                                    <span class="quantity-handler up">+</span>
+                                </div>
+                            </div>
+                            <div class="cart-item card">
+                                <div class="img item3"></div>
+                                <div class="item-info">
+                                    <h3 class="card__titulo">Picantovich</h3>
+                                    <span class="card__precio">$750</span>
+                                </div>
+                                <div class="item-handler">
+                                    <span class="quantity-handler down">-</span>
+                                    <span class="item-quantity">2</span>
+                                    <span class="quantity-handler up">+</span>
+                                </div>
+                            </div>
+                            
+        
+                            <span class="divider"></span>
+        
+                            <div class="cart-total">
+                                <p>Total:</p>
+                                <span>$3280</span>
+                            </div>
+                            <div class="boton">Comprar</div>
+                        </div>
+                        <div class="overlay"></div>
+                        <!-------TERMINA CARRITO------->
+                    </li>
+                    <li>
+                        <a href="#"><img class="zoom link" src="./assets/img/header/navbar/Profile.png" alt="Perfil"></a>
+                    </li>                    
                 </ul>
             </nav>
         </div>
@@ -35,7 +95,7 @@
                 <h1 class="entrada">Si tenes Zappi,</h1>
                 <h2 class="entrada">tenes Nucba.</h2>
                 <p class="entrada">Buscá lo que quieras y nucba te quedes sin comida.</p>
-                <a href="#" class="entrada zoom">Ver más</a>
+                <a href="#populares" class="entrada zoom">Ver más</a>
             </div>
 
             <img src="./assets/img/hero/zappi.png" alt="pizzas">

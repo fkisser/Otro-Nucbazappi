@@ -1,5 +1,161 @@
+/******PANTALLAS XL+*******/
+@media (min-width: 2500px) {
+    section{
+        width: 90%;
+        max-width: 2400px;
+    }
+    .card__titulo{
+        font-size: 25px;
+    }
+    .card__descripcion{
+        font-size: 20px;
+    }
+    .card__precio{
+        font-size: 30px;
+    }
+    .boton{
+        font-size: 20px;
+        max-height: 40px;
+    }
+
+/*HEADER*/
+    .navbar{
+        max-width: 2500px;
+    }
+    .link{
+        height: 40px;
+    }
+    .link--selected{
+        font-size: 20px;
+    }
+
+/*HERO*/
+    #hero img {
+        width: 40%;
+        max-width: 200%;
+    }
+    .hero-info {
+        gap: 50px;
+    }
+    .hero-info h1 { 
+        font-size: 72px;
+    }
+    
+    .hero-info h2 {
+        font-size: 68px;
+    }
+    
+    .hero-info p {
+        font-size: 30px;
+    }
+    .hero-info a {
+        font-size: 25px;
+        width: 200px;
+    }
+/*RECOMENDADOS*/
+    #recomendados h2{
+        font-size: 35px;
+    }
+    .card--recomendados{
+        padding: 20px;
+        gap: 20px;
+        max-width: 600px;
+        max-height: 200px;
+    }
+    .card--recomendados img{
+        max-width: 100px;
+    }
+/*CATEGORIAS*/
+    #categorias h2{
+        font-size: 25px;
+    }
+    .card--categorias{
+        width: 100%;
+        max-width: 250px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+    }
+    .card--categorias p{
+        font-size: 20px;
+    }
+/*POPULARES*/
+    #populares h2{
+        font-size: 35px;
+    }
+    .card--populares{
+        max-width: 500px;
+        padding: 20px;
+        gap: 10px;
+    }
+/*FOOTER*/
+    footer a, footer p {
+        font-size: 20px;
+    }
+    .footer-part {
+        gap: 30px;
+    }
+
+/*CARRITO*/
+    .cart {
+        padding: 30px;
+    }
+
+    .cart h2 {
+        font-size: 30px;
+    }
+
+    .cart-item {
+        column-gap: 20px;
+    }
+
+    .cart-item .img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quantity-handler {
+        padding: 4px 12px;
+        font-size: 20px;
+    }
+
+    .item-quantity {
+        font-size: 20px;
+    }
+
+    .cart-total p {
+        font-size: 30px;
+    }
+
+    .cart-total span {
+        font-size: 30px;
+    }
+    .cart .boton{
+        font-size: 30px;
+        padding: 10px;
+        max-height: 100px;
+    }
+}
+
 /************HEADER**************/
 
+@media (max-width: 576px) {
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar .links{
+        gap: 25px;
+    }
+}
+    
 
 
 
@@ -65,15 +221,15 @@
 
 /************RECOMENDADOS**************/
 @media (max-width: 768px) {
+    #recomendados .cards{
+        gap: 10px;
+    }
     .card--recomendados{
         width: 100%;
     }
 }
 @media (max-width: 576px) {
 
-    #recomendados .cards{
-        gap: 10px;
-    }
     .card--recomendados .boton{
         width: fit-content;
     }
@@ -108,9 +264,6 @@
 
 
 /************POPULARES**************/
-@media (max-width: 992px) {
-
-}
 @media (max-width: 768px) {
 
     #populares .cards{
@@ -140,5 +293,13 @@
 @media (max-width: 576px) {
     footer a, footer p {
         font-size: 12px;
+    }
+}
+
+/************CARRITO**************/
+@media (max-width: 576px) {
+    .item-handler {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
