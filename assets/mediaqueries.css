@@ -255,6 +255,9 @@
     #categorias .cards{
         gap: 10px;
     }
+    .card--categorias{
+        max-width: 160px;
+    }
     .card--categorias img{
         display: none;
     }

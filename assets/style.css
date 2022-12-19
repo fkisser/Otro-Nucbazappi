@@ -192,7 +192,14 @@ header{
 .card--recomendados img{
     max-width: 62px;
 }
-.card--recomendados div{
+.card--recomendados .card__contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.card__content div{
     display: flex;
     flex-direction: column;
     justify-content: center;
