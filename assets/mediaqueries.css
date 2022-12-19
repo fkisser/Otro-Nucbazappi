@@ -299,7 +299,11 @@
 /************CARRITO**************/
 @media (max-width: 576px) {
     .item-handler {
-        display: flex;
-        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .quantity-handler {
+        padding: 4px 6px;
+        font-size: 12px;
     }
 }
